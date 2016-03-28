@@ -1,0 +1,20 @@
+<!--#include virtual="header.html"-->
+<section>
+	<img id="profile" src="../images/pic.jpg" width="299" height="410" alt="A picture of me." />
+
+	<h2>Seja bem vindo!</h2>
+
+	<p><em>Olá, sou a Yara.</em>  Sou uma aluna de 4º ano de Ciência da Computação e estou estudando Design e Desenvolvimento de Games no RIT (Rochester Institute of Technology) como parte do programa de intercâmbio Ciências Sem Fronteiras. Falo português, inglês e francês fluente, e sou apaixonada por RPGs.</p>
+
+	<p>Meus passatempos incluem escrita, arte e música. Sou uma pessoa muito multidisciplinar e ficaria muito contente em fazer um pouco de tudo em um game!</p>
+
+	<p>Sinta-se à vontade para baixar <a href="../Yara_Grassi_Gouffon_Resume.pdf" target="_blank">meu currículo.</a></p>
+</section>
+<script>
+	document.querySelector("h1").innerHTML = "Portfólio da Yara";
+	document.querySelector("title").innerHTML = "Portfólio da Yara";
+	document.querySelector("#en").href += "index.html";
+	document.querySelector("#pt-br").href += "index.html";
+	document.querySelector("#nav-home").id = "current";
+</script>
+<!--#include virtual="footer.html"-->

@@ -1,0 +1,30 @@
+<!--#include virtual="header.html"-->
+<section>
+	<h2>Contate-me</h2>
+	<form method="post" action="formmail.php" name="ContactForm">
+		<input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER" />
+
+		<input type="hidden" name="recipients" value="yxg5358@rit.edu" />
+
+		<input type="hidden" name="required" value="Email:Seu e-mail,Name:Seu nome, Message:Sua mensagem" />
+
+		<input type="hidden" name="subject" value="IGME 230 Website Contact Form" />
+
+		<p>Nome: <input type="text" name="Name" /></p>
+		<p>E-mail: <input type="email" name="Email" /></p>
+		<p>Empresa: <input type="text" name="Company" /></p>
+		<p>Assunto: <input type="text" name="Offer-Subject" /></p>
+		<p>Mensagem:</p> 
+		<p><textarea name="Message" rows="10" cols="50"></textarea></p>
+
+		<input type="submit" value="Submit" />
+	</form>
+</section>
+<script>
+	document.querySelector("h1").innerHTML = "Contato";
+	document.querySelector("title").innerHTML = "Contato";
+	document.querySelector("#en").href += "contact.html";
+	document.querySelector("#pt-br").href += "contact.html";
+	document.querySelector("#nav-contact").id = "current";
+</script>
+<!--#include virtual="footer.html"-->

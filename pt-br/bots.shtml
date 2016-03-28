@@ -1,0 +1,95 @@
+<!--#include virtual="header_with_includes.html"-->
+
+<section>
+	<p>Este foi um projeto realizado em equipa de quatro pessoas durante a <a href="http://globalgamejam.org/">Global Game Jam de 2015</a>, cujo tema era <em>"O que fazemos agora?"</em>. É um jogo de puzzle no qual o jogador, que controla um fantasma aliado, deve mover as caixas para formar um caminho levando à saída, enquanto ao mesmo tempo prendre inimigos e os impede de eliminarem o humano.</p>
+
+	<p>O conceito original do jogo foi desenvolvido através do RPG MAker XP, mas o jogo ele mesmo foi feito no <em>Construct 2</em>. É possível baixá-lo através da <a href="http://globalgamejam.org/2015/games/we-only-missed-bots">página do projeto</a> ou do <a href="https://github.com/mvcds/global-game-jam-2015">repositório</a>. Também é possível <a href="https://db.tt/0RxvCElS">jogá-lo online</a>.</p>
+</section>
+
+<div id="gallery"></div>
+
+<section>
+	<h2>Trilha sonora</h2>
+	Ouça algumas das músicas do jogo!
+	<ul id="sound">
+		<li>
+			<audio controls>
+			  <source src="https://dl.dropboxusercontent.com/u/92536541/portfolio_music/3.mp3" type="audio/mpeg">
+			  Seu navegador não suporta elementos de aúdio.
+			</audio>
+		</li>
+
+		<li>
+			<audio controls>
+			  <source src="https://dl.dropboxusercontent.com/u/92536541/portfolio_music/4.mp3" type="audio/mpeg">
+			  Seu navegador não suporta elementos de aúdio.
+			</audio>
+		</li>
+
+		<li>
+			<audio controls>
+			  <source src="https://dl.dropboxusercontent.com/u/92536541/portfolio_music/010.mp3" type="audio/mpeg">
+			  Seu navegador não suporta elementos de aúdio.
+			</audio>
+		</li>
+
+		<li>
+			<audio controls>
+			  <source src="https://dl.dropboxusercontent.com/u/92536541/portfolio_music/012.mp3" type="audio/mpeg">
+			  Seu navegador não suporta elementos de aúdio.
+			</audio>
+		</li>
+
+		<li>
+			<audio controls>
+			  <source src="https://dl.dropboxusercontent.com/u/92536541/portfolio_music/015.mp3" type="audio/mpeg">
+			  Seu navegador não suporta elementos de aúdio.
+			</audio>
+		</li>
+	</ul>
+</section>
+
+<section>
+	<h2>Desafios</h2>
+
+	<ul>
+		<li><em>Tempo,</em> como em qualquer game jam. Tínhamos apenas um fim de semana para desenvolver um jogo completamente do zero.</li>
+		<li><em>Trabalho em equipe.</em> Nenhum de nós quatro nos conhecíamos de antes, e todos tínhamos vivências bem diferentes.</li>
+		<li><em>Experiência.</em> Era a nossa primeira vez participando de uma game jam. A maioria de nós também não tinha sequer realmente desenvolvido um jogo antes.</li>
+		<li><em>Design de fases.</em> É talvez o elemento mais importante de um jogo de quebra-cabeças, e nenhum de nós tinha muita experiência em criar fases</li>
+	</ul>
+</section>
+
+<section>
+	<h2>A minha parte</h2>
+
+	Eu faço um pouco de tudo, então tive vários papéis na equipe:
+
+	<ul>
+
+		<li><em>Trilha sonora e efeitos.</em> Eu produzi a trilha sonora (que foi generada aleatoriamente através do site <a href="http://abundant-music.com/">Abundant Music</a>) e escolhi os efeitos sonoros.</li>
+		<li><em>Design de fases.</em> Eu criei as fases de desafio (as duas últimas das quatro fases).</li>
+		<li><em>Programação.</em> Eu ajudei no desenvolvimento quando os outros dois programadores precisavam de uma mão, e corrigi bugs enquanto eles trabalhavam no resto do projeto.</li>
+		<li><em>Administração.</em> Eu administrei o tempo restante, acompanhei o progresso da equipe e organizei arquivos, recursos e distribuição do jogo.</li>
+	</ul>
+</section>
+
+<section>
+	<h2>Membros da equipe</h2>
+
+	<ul>
+		<li>Fernando Duarte Macari</li>
+		<li>Marcos Silva</li>
+		<li>Rebecca Kamehama</li>
+		<li>Yara Grassi Gouffon</li>
+	</ul>
+</section>
+<script>
+	appendGalleryPictures("bots", 5);
+	document.querySelector("h1").innerHTML = "We Only Missed the Bots";
+	document.querySelector("title").innerHTML = "We Only Missed the Bots";
+	document.querySelector("#en").href += "bots.html";
+	document.querySelector("#pt-br").href += "bots.html";
+	document.querySelector("#nav-projects").id = "current";
+</script>
+<!--#include virtual="footer.html"-->

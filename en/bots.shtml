@@ -1,0 +1,94 @@
+<!--#include virtual="header_with_includes.html"-->
+
+<section>
+	<p>This was a four-person project made for the <a href="http://globalgamejam.org/">2015 Global Game Jam</a>, the theme for which was <em>"What do we do now?"</em>. It's a puzzle game where the player, who controls a friendly ghost, must move the boxes in order to free up a path leading to the exit all the while trapping enemies and preventing them from killing the human.</p>
+
+	<p>The original concept for the game was made in RPG Maker XP, but the game itself was developed in <em>Construct 2</em>. It may be downloaded from <a href="http://globalgamejam.org/2015/games/we-only-missed-bots">the project page</a> or from <a href="https://github.com/mvcds/global-game-jam-2015">the repository page</a>. It may also <a href="https://db.tt/0RxvCElS">be played online</a>.</p>
+</section>
+
+<div id="gallery"></div>
+
+<section>
+	<h2>Soundtrack</h2>
+	Listen to some of the game soundtrack!
+	<ul id="sound">
+		<li>
+			<audio controls>
+			  <source src="https://dl.dropboxusercontent.com/u/92536541/portfolio_music/3.mp3" type="audio/mpeg">
+			  Your browser does not support the audio element.
+			</audio>
+		</li>
+
+		<li>
+			<audio controls>
+			  <source src="https://dl.dropboxusercontent.com/u/92536541/portfolio_music/4.mp3" type="audio/mpeg">
+			  Your browser does not support the audio element.
+			</audio>
+		</li>
+
+		<li>
+			<audio controls>
+			  <source src="https://dl.dropboxusercontent.com/u/92536541/portfolio_music/010.mp3" type="audio/mpeg">
+			  Your browser does not support the audio element.
+			</audio>
+		</li>
+
+		<li>
+			<audio controls>
+			  <source src="https://dl.dropboxusercontent.com/u/92536541/portfolio_music/012.mp3" type="audio/mpeg">
+			  Your browser does not support the audio element.
+			</audio>
+		</li>
+
+		<li>
+			<audio controls>
+			  <source src="https://dl.dropboxusercontent.com/u/92536541/portfolio_music/015.mp3" type="audio/mpeg">
+			  Your browser does not support the audio element.
+			</audio>
+		</li>
+	</ul>
+</section>
+
+<section>
+	<h2>Challenges</h2>
+
+	<ul>
+		<li><em>Time,</em> as with every game jam. We had only one weekend to make a complete game from the ground up.</li>
+		<li><em>Team play.</em> None of the four of us had ever met each other before, and we each had very different backgrounds.</li>
+		<li><em>Experience.</em> It was our first time ever in a game jam. Most of us hadn't ever really worked on a game before either.</li>
+		<li><em>Level design.</em> It can make or break a puzzle game, and none of us were very knowledgeable in it.</li>
+	</ul>
+</section>
+
+<section>
+	<h2>My part in it</h2>
+
+	I'm a bit of a jack of all trades, so I took on multiple roles in the team:
+
+	<ul>
+		<li><em>Soundtrack and SFX.</em> I came up with the soundtrack (which I generated using <a href="http://abundant-music.com/">Abundant Music</a>) and picked sound effects.</li>
+		<li><em>Level design.</em> I designed the challenge levels (the last two out of four total).</li>
+		<li><em>Programming.</em> I joined in for development whenever the main programmers needed help, and solved bugs while they worked.</li>
+		<li><em>Administration.</em> I kept track of time and of the team's progress and handled files, assets and distribution.</li>
+	</ul>
+</section>
+
+<section>
+	<h2>Team members</h2>
+
+	<ul>
+		<li>Fernando Duarte Macari</li>
+		<li>Marcos Silva</li>
+		<li>Rebecca Kamehama</li>
+		<li>Yara Grassi Gouffon</li>
+	</ul>
+</section>
+<script>
+	appendGalleryPictures("bots", 5);
+	document.querySelector("h1").innerHTML = "We Only Missed the Bots";
+	document.querySelector("title").innerHTML = "We Only Missed the Bots";
+	document.querySelector("#en").href += "bots.html";
+	document.querySelector("#pt-br").href += "bots.html";
+	document.querySelector("#nav-projects").id = "current";
+</script>
+<!--#include virtual="footer.html"-->

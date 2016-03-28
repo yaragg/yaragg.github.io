@@ -1,0 +1,51 @@
+<!--#include virtual="header.html"-->
+<section>
+	<div class="project" id="bots">
+		<a class="pic-link" href="bots.html"></a>
+		<a class="name" href="bots.html">We Only Missed the Bots</a>
+	</div>
+
+	<div class="project" id="dungeon">
+		<a class="pic-link" href="dungeon.html"></a>
+		<a class="name" href="dungeon.html">Dungeon Crawler</a>
+	</div>
+
+	<div class="project" id="asteroids">
+		<a class="pic-link" href="asteroids.html"></a>
+		<a class="name" href="asteroids.html">Asteroids</a>
+	</div>
+
+	<div class="project" id="tracery">
+		<a class="pic-link" href="tracery_dungeon.html"></a>
+		<a class="name" href="tracery_dungeon.html">Gerador de Histórias de Dungeon Crawl</a>
+	</div>
+
+	<div class="project" id="random">
+		<a class="pic-link" href="random.html"></a>
+		<a class="name" href="random.html">Rolling on Random</a>
+	</div>
+
+	<div class="project" id="wars">
+		<a class="pic-link" href="robot_wars.html"></a>
+		<a class="name" href="robot_wars.html">Guerra de Robôs</a>
+	</div>
+
+	<ul class="print-only">
+		<li>We Only Missed the Bots</li>
+		<li>Dungeon Crawler</li>
+		<li>Asteroids</li>
+		<li>Gerador de Histórias Dungeon Crawl</li>
+		<li>Rolling on Random</li>
+		<li>Guera de Robôs</li>
+	</ul>
+</section>
+<footer>Última atualização: <!--#flastmod file="projects.html"--></footer>
+<script>
+	document.querySelector("h1").innerHTML = "Projetos";
+	document.querySelector("title").innerHTML = "Projetos";
+	document.querySelector("#en").href += "projects.html";
+	document.querySelector("#pt-br").href += "projects.html";
+	document.querySelector("#nav-projects").id = "current";
+</script>
+
+<!--#include virtual="footer.html"-->

@@ -1,0 +1,14 @@
+<!--#include virtual="header.html"-->
+<section>
+	<h2>Página não encontrada!</h2>
+
+	<p>Desculpe, você acessou uma página que não existe. Alguém deve ter comido ela...</p>
+	<img src="../images/Tumbeasts_servers.png" width="320" height="205" alt="Beasts gnawing on the servers" />
+</section>
+<script>
+	document.querySelector("h1").innerHTML = "Erro 404";
+	document.querySelector("title").innerHTML = "Erro 404";
+	document.querySelector("#en").href += "error.html";
+	document.querySelector("#pt-br").href += "error.html";
+</script>
+<!--#include virtual="footer.html"-->

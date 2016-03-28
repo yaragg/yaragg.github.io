@@ -1,0 +1,113 @@
+<!--#include virtual="header.html"-->
+<script src="../lib/jquery-1.12.0.min.js"></script>
+<section>
+
+	<div id="sub">
+        <ul>
+            <li><a href="#" id="programming" class="sub-selected">Linguagens de programação</a></li>
+            <li><a href="#" id="languages">Línguas, Arte &amp; Música</a></li>
+            <li><a href="#" id="miscellaneous">Outros</a></li>
+        </ul>
+	</div>
+
+	<div id="progContent">
+		<h2>Linguagens de programação</h2>
+
+		Tenho experiência em:
+		<ul>
+			<li>C</li>
+			<li>Java</li>
+			<li>HTML5, CSS e JavaScript</li>
+			<li>SQL (PostgreSQL)</li>
+			<li>RPG Maker XP e RPG Maker VX Ace</li>
+		</ul>
+
+		Também conheço:
+		<ul>
+			<li>Assembly</li>
+			<li>C#</li>
+			<li>Construct 2</li>
+			<li>Perl</li>
+			<li>Processing</li>
+			<li>Python</li>
+			<li>Unity3D</li>
+			<li>WebGL</li>
+		</ul>
+	</div>
+
+	<div id="langContent">
+		<h2>Línguas, Arte &amp; Música</h2>
+
+		Eu cresci bilíngue entre português e francês, e desde então procurei aprender outros idiomas
+		<ul>
+			<li>Francês fluente</li>
+			<li>Português fluente</li>
+			<li>Inglês fluente</li>
+			<li>Espanhol básico (4 anos de aula durante o ensino médio)</li>
+			<li>Japonês bem básico (2 anos de aula)</li>
+		</ul>
+
+		Eu também tenho algumas habilidades artísticas!
+		<ul>
+			<li>Sei desenhar um pouco, postei alguns desenhos antigos na <a href="http://yaragg.deviantart.com/">minha página do DeviantArt</a></li>
+			<li>Alguma habilidade musical
+				<ul>
+					<li>Tive 8 anos de aula de violino</li>
+					<li>Tive de 3 a 4 anos de aula de piano</li>
+					<li>Tenho um canal pouco atualizado <a href="https://www.youtube.com/user/yaragg01137">no Youtube</a> onde posto algumas rendições de músicas de video game</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+	<div id="miscContent">
+		<h2>Outros</h2>
+
+		Sinto-me confortável com:
+		<ul>
+			<li>Git</li>
+			<li>Photoshop</li>
+		</ul>
+	</div>
+</section>
+<script>
+document.querySelector("h1").innerHTML = "Habilidades";
+document.querySelector("title").innerHTML = "Habilidades";
+document.querySelector("#en").href += "skills.html";
+document.querySelector("#pt-br").href += "skills.html";
+document.querySelector("#nav-skills").id = "current";
+</script>
+<script>
+"use strict";
+
+$(document).ready(function(){
+	$("#programming").on("click", function(){
+		$("#programming").addClass("sub-selected");
+		$("#languages").removeClass("sub-selected");
+		$("#miscellaneous").removeClass("sub-selected");
+		$("#langContent").hide();
+		$("#miscContent").hide();
+		$("#progContent").fadeIn(750);
+	});
+
+	$("#languages").on("click", function(){
+		$("#languages").addClass("sub-selected");
+		$("#programming").removeClass("sub-selected");
+		$("#miscellaneous").removeClass("sub-selected");
+		$("#progContent").hide();
+		$("#miscContent").hide();
+		$("#langContent").fadeIn(750);
+	});
+
+	$("#miscellaneous").on("click", function(){
+		$("#miscellaneous").addClass("sub-selected");
+		$("#programming").removeClass("sub-selected");
+		$("#languages").removeClass("sub-selected");
+		$("#progContent").hide();
+		$("#langContent").hide();
+		$("#miscContent").fadeIn(750);
+	});
+});
+
+</script>
+<!--#include virtual="footer.html"-->

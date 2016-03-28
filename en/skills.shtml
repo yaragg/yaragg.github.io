@@ -1,0 +1,112 @@
+<!--#include virtual="header.html"-->
+<script src="../lib/jquery-1.12.0.min.js"></script>
+<section>
+	<div id="sub">
+        <ul>
+            <li><a href="#" id="programming" class="sub-selected">Programming languages</a></li>
+            <li><a href="#" id="languages">Languages, Arts &amp; Music</a></li>
+            <li><a href="#" id="miscellaneous">Miscellaneous</a></li>
+        </ul>
+	</div>
+
+	<div id="progContent">
+		<h2>Programming languages</h2>
+
+		I'm experienced in the following:
+		<ul>
+			<li>C</li>
+			<li>Java</li>
+			<li>HTML5, CSS and JavaScript</li>
+			<li>SQL (PostgreSQL)</li>
+			<li>RPG Maker XP and RPG Maker VX Ace</li>
+		</ul>
+
+		I also know:
+		<ul>
+			<li>Assembly</li>
+			<li>C#</li>
+			<li>Construct 2</li>
+			<li>Perl</li>
+			<li>Processing</li>
+			<li>Python</li>
+			<li>Unity3D</li>
+			<li>WebGL</li>
+		</ul>
+
+	</div>
+
+	<div id="langContent">
+		<h2>Languages, Arts &amp; Music</h2>
+
+		I grew up a Portuguese/French bilingual, and have since branched out to other languages:
+		<ul>
+			<li>Fluent French</li>
+			<li>Fluent Portuguese</li>
+			<li>Fluent English</li>
+			<li>Basic Spanish (4 years of classes in high school)</li>
+			<li>Very basic Japanese (2 years of classes)</li>
+		</ul>
+
+		I also have some artistic skills!
+		<ul>
+			<li>Some drawing skills, which you can check out in <a href="http://yaragg.deviantart.com/">my DeviantArt account</a></li>
+			<li>Some music skills
+				<ul>
+					<li>Took 8 years of violin classes</li>
+					<li>Took some 3-4 years of piano classes</li>
+					<li>Have a rarely updated <a href="https://www.youtube.com/user/yaragg01137">Youtube channel</a> where I post some video game music covers</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+	<div id="miscContent">
+		<h2>Miscellaneous</h2>
+
+		I am comfortable with:
+		<ul>
+			<li>Git</li>
+			<li>Photoshop</li>
+		</ul>
+	</div>
+</section>
+<script>
+document.querySelector("h1").innerHTML = "Skills";
+document.querySelector("title").innerHTML = "Skills";
+document.querySelector("#en").href += "skills.html";
+document.querySelector("#pt-br").href += "skills.html";
+document.querySelector("#nav-skills").id = "current";
+</script>
+<script>
+"use strict";
+
+$(document).ready(function(){
+	$("#programming").on("click", function(){
+		$("#programming").addClass("sub-selected");
+		$("#languages").removeClass("sub-selected");
+		$("#miscellaneous").removeClass("sub-selected");
+		$("#langContent").hide();
+		$("#miscContent").hide();
+		$("#progContent").fadeIn(750);
+	});
+
+	$("#languages").on("click", function(){
+		$("#languages").addClass("sub-selected");
+		$("#programming").removeClass("sub-selected");
+		$("#miscellaneous").removeClass("sub-selected");
+		$("#progContent").hide();
+		$("#miscContent").hide();
+		$("#langContent").fadeIn(750);
+	});
+
+	$("#miscellaneous").on("click", function(){
+		$("#miscellaneous").addClass("sub-selected");
+		$("#programming").removeClass("sub-selected");
+		$("#languages").removeClass("sub-selected");
+		$("#progContent").hide();
+		$("#langContent").hide();
+		$("#miscContent").fadeIn(750);
+	});
+});
+</script>
+<!--#include virtual="footer.html"-->

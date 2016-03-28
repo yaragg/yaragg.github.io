@@ -1,0 +1,18 @@
+<!--#include virtual="header_with_includes.html"-->
+
+<section>
+	<p>Also known as <em>Invasion of the Sentient Asteroids</em>. It was a homework assignment for my Interactive Media Development class.</p>
+
+	<p>It was written in <em>Processing</em> and was meant to be a modernized version of the classic arcade game Asteroids.</p>
+</section>
+
+<div id="gallery"></div>
+<script>
+	appendGalleryPictures("asteroids", 4);
+	document.querySelector("h1").innerHTML = "Asteroids";
+	document.querySelector("title").innerHTML = "Asteroids";
+	document.querySelector("#en").href += "asteroids.html";
+	document.querySelector("#pt-br").href += "asteroids.html";
+	document.querySelector("#nav-projects").id = "current";
+</script>
+<!--#include virtual="footer.html"-->

@@ -1,0 +1,33 @@
+.project{
+	display: none;
+}
+
+.print-only{
+	display: block;
+	clear: both;
+}
+
+body, h1{
+	color: black;
+	font-family: serif;
+	width: 100%;
+}
+
+h1{
+	font-size: 300%;
+	color: #923460;
+}
+
+section{
+	width: 100%;
+	margin-bottom: 5%;
+}
+
+a:link:after, a:visited:after { 
+	content:" (" attr(href) ") "; 
+}
+
+a:first-of-type, #sound, nav, img, #gallery{
+	display: none;
+}
+

@@ -1,0 +1,20 @@
+<!--#include virtual="header.html"-->
+<section>
+	<img id="profile" src="../images/pic.jpg" width="299" height="410" alt="A picture of me." />
+
+	<h2>Welcome!</h2>
+
+	<p><em>Hi, I'm Yara.</em>  I'm a 4th year Computer Science student from Brazil who's studying Game Design &amp; Development at RIT as a one year exchange program. I speak fluent Brazilian Portuguese, English and French, and I have a passion for RPGs.</p>
+
+	<p>My hobbies include writing, art and music. I'm a very multidisciplinary person and I'd be happy to do a bit of everything in a game!</p>
+
+	<p>Feel free to download <a href="../Yara_Grassi_Gouffon_Resume.pdf" target="_blank">my resume.</a></p>
+</section>
+<script>
+	document.querySelector("h1").innerHTML = "Yara's Portfolio";
+	document.querySelector("title").innerHTML = "Yara's Portfolio";
+	document.querySelector("#en").href += "index.html";
+	document.querySelector("#pt-br").href += "index.html";
+	document.querySelector("#nav-home").id = "current";
+</script>
+<!--#include virtual="footer.html"-->

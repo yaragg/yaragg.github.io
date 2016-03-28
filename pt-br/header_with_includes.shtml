@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Title</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, minimumscale=1.0, maximum-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	<link rel="stylesheet" media="print" type="text/css" href="../css/print.css" />
+	
+	<script src="../lib/jquery-1.12.0.min.js"></script>
+
+	<!-- fancybox plugin JS includes-->
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="../lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="../lib/fancybox/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="../lib/fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+	<!-- Add Button helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="../lib/fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+	<script type="text/javascript" src="../lib/fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+	<script type="text/javascript" src="../js/script.js"></script>
+</head>
+<body>
+
+<a href="index.html"><img id="logo" src="../images/logo.png" width="72" height="77" alt="Logo" /></a>
+
+<div id="flags">
+	<a id="en" class="flag" href="../en/"><img src="../images/en.png" width="52" height="52" title="Display in English" alt="US flag" /></a>
+	<a id="pt-br" class="flag" href="../pt-br/"><img src="../images/pt-br.png" width="52" height="52" title="Mostrar em Português" alt="Bandeira do Brasil" /></a>
+</div>
+
+<h1>Header</h1>
+
+<div id="wrapper">
+	<div id="center-wrapper">
+		<nav>
+			<ul>
+				<li><a id="nav-home" class="first" href="index.html">Início</a></li>
+				<li><a id="nav-projects" href="projects.html">Projetos</a></li>
+				<li><a id="nav-skills" href="skills.html">Habilidades</a></li>
+				<li><a id="nav-contact" class="last" href="contact.html">Contato</a></li>
+			</ul>
+		</nav>
+	</div>
+</div>
