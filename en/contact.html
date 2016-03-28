@@ -1,0 +1,31 @@
+{% include en/header.html %}
+<section>
+	<h2>Contact me</h2>
+	<form method="post" action="formmail.php" name="ContactForm">
+		<input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER" />
+
+		<input type="hidden" name="recipients" value="yxg5358@rit.edu" />
+
+		<input type="hidden" name="required" value="Email:Your email address,Name:Your name, Message:Your message" />
+
+		<input type="hidden" name="subject" value="IGME 230 Website Contact Form" />
+
+		<p>Name: <input type="text" name="Name" /></p>
+		<p>E-mail: <input type="email" name="Email" /></p>
+		<p>Company: <input type="text" name="Company" /></p>
+		<p>Subject: <input type="text" name="Offer-Subject" /></p>
+		<p>Message:</p> 
+		<p><textarea name="Message" rows="10" cols="50"></textarea></p>
+
+		<input type="submit" value="Submit" />
+	</form>
+</section>
+
+<script>
+	document.querySelector("h1").innerHTML = "Contact";
+	document.querySelector("title").innerHTML = "Contact";
+	document.querySelector("#en").href += "contact.html";
+	document.querySelector("#pt-br").href += "contact.html";
+	document.querySelector("#nav-contact").id = "current";
+</script>
+{% include en/footer.html %}

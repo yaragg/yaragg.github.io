@@ -1,0 +1,18 @@
+{% include en/header_with_includes.html %}
+
+<section>
+	<p>This was a homework assignment for my Interactive Media Development class.</p>
+
+	<p>It was written in <em>Processing</em>. We were asked to make an animation with randomly generated elements: in my case, the birds' movement follows two Perlin noise sequences, the clouds are generated using directed randomness and the trees are created using a Gaussian curve.</p>
+</section>
+
+<div id="gallery"></div>
+<script>
+	appendGalleryPictures("random", 4);
+	document.querySelector("h1").innerHTML = "Rolling on Random";
+	document.querySelector("title").innerHTML = "Rolling on Random";
+	document.querySelector("#en").href += "random.html";
+	document.querySelector("#pt-br").href += "random.html";
+	document.querySelector("#nav-projects").id = "current";
+</script>
+{% include en/footer.html %}

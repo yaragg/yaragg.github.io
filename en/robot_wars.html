@@ -1,0 +1,20 @@
+{% include en/header_with_includes.html %}
+
+<section>
+	<p>This was an assignment for my Programming Lab II course at the University of São Paulo. For this project, we had to create a simple programming language that can be used to program robots to fight and gather resources. The player can write scripts to define their robots' behavior and once those scripts are loaded and assigned to each robot, a graphical simulation is run and shows the ensuing battle.</p>
+
+	<p>The main code was written in <em>Java</em> and used <em>JavaCC</em> to create a simple compiler for our language.</p>
+
+	<p>Due to not being entirely sure how copyright applies to some of the images we used in this project, I can't display screenshots of the battles themselves here. Instead, the image below shows a script written for a robot with an aggressive behavior that wanders the field in search of an enemy to attack.</p>
+</section>
+
+<div id="gallery"></div>
+<script>
+	appendGalleryPictures("robot_wars", 1);
+	document.querySelector("h1").innerHTML = "Robot Wars";
+	document.querySelector("title").innerHTML = "Robot Wars";
+	document.querySelector("#en").href += "robot_wars.html";
+	document.querySelector("#pt-br").href += "robot_wars.html";
+	document.querySelector("#nav-projects").id = "current";
+</script>
+{% include en/footer.html %}

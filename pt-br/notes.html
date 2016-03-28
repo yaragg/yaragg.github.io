@@ -1,0 +1,23 @@
+{% include pt-br/header.html %}
+<section>
+	<h2>Créditos</h2>
+
+	<ul>
+
+		<li>Todo o código, HTML e CSS, foi feito por mim mesma.</li>
+
+		<li>Truque para <a href="http://www.search-this.com/2007/09/19/when-is-a-float-not-a-float/">centralizar navbar com li flutuante</a>.</li>
+
+		<li>Imagem de fundo por <a href="http://wdwparksgal-stock.deviantart.com/art/Fantasy-Premade-BKG-528809879">WDWParksGal-Stock</a>, disponível sob licença CC BY 3.0.</li>
+
+		<li>Imagem de erro 404 por <a href="http://theoatmeal.com/comics/state_web_summer#tumblr">Matthew Inman</a> disponível sob licença Creative Commons Attribution 3.0 Unported.</li>
+
+	</ul>
+</section>
+<script>
+	document.querySelector("h1").innerHTML = "Notas";
+	document.querySelector("title").innerHTML = "Notas";
+	document.querySelector("#en").href += "notes.html";
+	document.querySelector("#pt-br").href += "notes.html";
+</script>
+{% include pt-br/footer.html %}

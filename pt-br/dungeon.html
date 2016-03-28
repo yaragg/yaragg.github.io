@@ -1,0 +1,51 @@
+{% include pt-br/header_with_includes.html %}
+
+<section>
+	<p>Esse projeto sem nome foi um trabalho em trio feito para um curso de Design e Desenvolvimento de Games na Universidade de São Paulo.</p>
+
+	<p>O jogo é um dungeon crawler com mapas gerados aleatoriamente, batalhas por turno e uma narrativa inspirada pela mitologia grega. Foi desenvolvimento inteiramente com o <em>RPG Maker VX Ace</em>.</p>
+
+	<p>O jogo está disponível para baixar <a href="https://www.dropbox.com/s/61hnu3cs842p67l/Dungeon%20Crawler.exe?dl=0">aqui</a>. Está disponível em inglês e roda apenas em Windows.</p>
+</section>
+
+<div id="gallery"></div>
+
+<section>
+	<h2>Desafios</h2>
+
+	<ul>
+		<li><em>Tempo.</em> Era um trabalho feito em meio semestre, então tivemos um pouco menos de três meses para desenvolver o jogo.</li>
+		<li><em>Trabalho em equipe.</em> Os outros membros não tinham muito tempo para dedicar ao projeto, então tivemos que tentar compensar.</li>
+	</ul>
+</section>
+
+<section>
+	<h2>Minha parte</h2>
+
+	<ul>
+		<li><em>Conceito.</em></li>
+		<li><em>História e escrita.</em> Eu imaginei a trama principal, a desenvolvi e escrevi a introdução assim como a maioria das cenas e diálogos.</li>
+		<li><em>Trilha sonora.</em> Eu escolhi a trilha sonora, usando músicas royalty free encontradas na Internet assim como recursos do RPG Maker VX Ace.</li>
+		<li><em>Programação.</em> Eu tenho experiência com RPG Maker em geral, então me encarreguei da maioria dos eventos e da busca por scripts.</li>
+	</ul>
+</section>
+
+
+<section>
+	<h2>Membros da equipe</h2>
+
+	<ul>
+		<li>Gustavo Teixeira da Cunha Coelho</li>
+		<li>Renan Fichberg</li>
+		<li>Yara Grassi Gouffon</li>
+	</ul>
+</section>
+<script>
+	appendGalleryPictures("dungeon", 7);
+	document.querySelector("h1").innerHTML = "Dungeon Crawler";
+	document.querySelector("title").innerHTML = "Dungeon Crawler";
+	document.querySelector("#en").href += "dungeon.html";
+	document.querySelector("#pt-br").href += "dungeon.html";
+	document.querySelector("#nav-projects").id = "current";
+</script>
+{% include pt-br/footer.html %}

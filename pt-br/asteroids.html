@@ -1,0 +1,18 @@
+{% include pt-br/header_with_includes.html %}
+
+<section>
+	<p>Também conhecido como <em>Invasion of the Sentient Asteroids</em> (Invasão dos Asteróides Sentientes). Trata-se de um projeto desenvolvido para um curso de Desenvolvimento de Mídia Interativa.</p>
+
+	<p>Foi escrito em <em>Processing</em> e a ideia era fazer uma versão modernizada do clássico do arcade Asteroids.</p>
+</section>
+
+<div id="gallery"></div>
+<script>
+	appendGalleryPictures("asteroids", 4);
+	document.querySelector("h1").innerHTML = "Asteróides";
+	document.querySelector("title").innerHTML = "Asteróides";
+	document.querySelector("#en").href += "asteroids.html";
+	document.querySelector("#pt-br").href += "asteroids.html";
+	document.querySelector("#nav-projects").id = "current";
+</script>
+{% include pt-br/footer.html %}
