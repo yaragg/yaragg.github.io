@@ -1,3 +1,7 @@
+---
+permalink: /404.html
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,12 +26,16 @@
 </head>
 <body>
 
-<h1>Choose a language<br/>Escolha um idioma</h1>
+<section>
+	<h2>Page not found! / Página não encontrada!</h2>
+	<img src="../images/Tumbeasts_servers.png" width="320" height="205" alt="Beasts gnawing on the servers" />
+</section>
 
-<div id="flags">
-	<a id="en" class="flag" href="en/index.html"><img src="images/en.png" width="52" height="52" title="Display in English" alt="US flag" /></a>
-	<a id="pt-br" class="flag" href="pt-br/index.html"><img src="images/pt-br.png" width="52" height="52" title="Mostrar em Português" alt="Bandeira do Brasil" /></a>
-</div>
-
+<script>
+	document.querySelector("h1").innerHTML = "Error 404";
+	document.querySelector("title").innerHTML = "Error 404";
+	document.querySelector("#en").href += "error.html";
+	document.querySelector("#pt-br").href += "error.html";
+</script>
 </body>
 </html>
