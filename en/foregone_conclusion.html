@@ -1,0 +1,17 @@
+---
+layout: en
+---
+
+<section>
+	<p>A <a href="http://twinery.org/">Twine</a> project I made for Digital Creative Writing Workshop class. Since I was learning how to use the canvas element in another class at the same time, I decided to put my new skills to use and make this piece of interactive fiction a little more interactive. The interactive elements were coded in JavaScript. <a href="http://yaragg.github.io/ENGL389-Digital-Creative-Writing-Workshop/losso/foregone_conclusion.html">Read it online now!</a></p>
+</section>
+
+<div id="gallery"></div>
+<script>
+	appendGalleryPictures("foregone_conclusion", 1);
+	document.querySelector("h1").innerHTML = "Foregone Conclusion";
+	document.querySelector("title").innerHTML = "Foregone Conclusion";
+	document.querySelector("#en").href += "foregone_conclusion.html";
+	document.querySelector("#pt-br").href += "foregone_conclusion.html";
+	document.querySelector("#nav-projects").id = "current";
+</script>

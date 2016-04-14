@@ -1,0 +1,17 @@
+---
+layout: pt-br
+---
+
+<section>
+<p>Um projeto realizado com <a href="http://twinery.org/">Twine</a> para uma disciplina de workshop de literatura digital no Rochester Institute of Technology. Como eu estava aprendendo a utilizar o elemento canvas em outra disciplina no mesmo semestre, decidi usar esse novo conhecimento para fazer essa ficção interativa se tornar um pouco mais interativa. Feito com JavaScript.<a href="http://yaragg.github.io/ENGL389-Digital-Creative-Writing-Workshop/losso/foregone_conclusion.html">Leia online!</a> (Apenas em inglês.)</p>
+</section>
+
+<div id="gallery"></div>
+<script>
+	appendGalleryPictures("foregone_conclusion", 1);
+	document.querySelector("h1").innerHTML = "Foregone Conclusion";
+	document.querySelector("title").innerHTML = "Foregone Conclusion";
+	document.querySelector("#en").href += "foregone_conclusion.html";
+	document.querySelector("#pt-br").href += "foregone_conclusion.html";
+	document.querySelector("#nav-projects").id = "current";
+</script>
