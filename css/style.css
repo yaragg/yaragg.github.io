@@ -195,6 +195,14 @@ figure{
 	background-image: url('../images/bots_thumb.png');
 }
 
+#topdown_shooter{
+	background-image: url('../images/topdown_shooter_thumb.png');
+}
+
+#foregone_conclusion{
+	background-image: url('../images/foregone_conclusion_thumb.png');
+}
+
 #dungeon{
 	background-image: url('../images/dungeon_thumb.png');
 }
