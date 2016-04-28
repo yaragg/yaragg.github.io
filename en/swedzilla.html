@@ -1,0 +1,26 @@
+---
+layout: en
+---
+
+<section>
+	<p>This is a pair project I made for web class using HTML5 and JavaScript. One of the cool features I implemented is motion detection: try it out, give it permission to use your webcam and check the Motion Detection box! If you enable the 'Camera controls boost' checkbox, the bass boost will increase the more you move around. <a href="https://yaragg.github.io/IGME330-Audio-Visualizer/">View it online!</a></p>
+</section>
+
+<section>
+	<h2>Group members</h2>
+
+	<ul>
+		<li>Therese Henriksson</li>
+		<li>Yara Grassi Gouffon</li>
+	</ul>
+</section>
+
+<div id="gallery"></div>
+<script>
+	appendGalleryPictures("swedzilla", 2);
+	document.querySelector("h1").innerHTML = "Swedzilla Audio Visualizer";
+	document.querySelector("title").innerHTML = "Swedzilla Audio Visualizer";
+	document.querySelector("#en").href += "swedzilla.html";
+	document.querySelector("#pt-br").href += "swedzilla.html";
+	document.querySelector("#nav-projects").id = "current";
+</script>

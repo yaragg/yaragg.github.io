@@ -1,0 +1,26 @@
+---
+layout: pt-br
+---
+
+<section>
+	<p>Esse é um projeto em dupla que fiz para uma matéria de web usando HTML5 e JavaScript. Uma das funcionalidades interessantes de projeto é a detecção de movimento: experimente dar permissão para acessar a webcam e clicar na caixa de 'Motion detection'! Se além disso você habilitar a caixa 'Camera controls boost', os sons graves ficarão mais fortes quanto mais você se movimentar. <a href="https://yaragg.github.io/IGME330-Audio-Visualizer/">Acesse online!</a> (Em inglês.)</p>
+</section>
+
+<section>
+	<h2>Dupla</h2>
+
+	<ul>
+		<li>Therese Henriksson</li>
+		<li>Yara Grassi Gouffon</li>
+	</ul>
+</section>
+
+<div id="gallery"></div>
+<script>
+	appendGalleryPictures("swedzilla", 2);
+	document.querySelector("h1").innerHTML = "Visualizador de Áudio Swedzilla";
+	document.querySelector("title").innerHTML = "Visualizador de Áudio Swedzilla";
+	document.querySelector("#en").href += "swedzilla.html";
+	document.querySelector("#pt-br").href += "swedzilla.html";
+	document.querySelector("#nav-projects").id = "current";
+</script>
