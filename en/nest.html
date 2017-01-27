@@ -1,0 +1,33 @@
+---
+layout: en
+---
+<section>
+	<p><em>The Nest</em> is a visual novel developed for Foundations of Interactive Narrative class at Rochester Institute of Technology. We had a little less than two months to pitch a plot, write the story in screenplay format, receive feedback from our peers, and implement the VN using <a href="https://www.renpy.org/">Ren'py</a>, which is a Python framework for developing visual novels.</p>
+
+	<p>Writing, character design and character art were all made by myself. Credits for the music, sound effects and backgrounds can be found in <a href="https://github.com/yaragg/The-Nest">the repository for the project</a>. The story is based on a small arc of a much, much larger story I have been writing with a friend, Karalynn Krause, for five years now.</p>
+
+	<p>In <em>The Nest</em>, you play as High Mage Luna, who has just returned from an ill-fated incursion into a newly discovered demon realm. During her travels, she met the son of the late High Mage Nikolai, who shared his suspicions that the man she had loved and watched die for the crime of practicing Necromancy had in fact been framed. Now, twenty years after that horrible execution, she must carefully navigate the vipers' nest that is the High Council of the Mages' Guild, uncover secrets of the past that she had already failed to find all those years ago, and discover who is to blame for Nikolai's wrongful death. When any of her friends and fellow High Mages could be the traitor she's looking for, she must be careful not to become a second Nikolai herself...</p>
+
+	<p>Download it <a href="https://dl.dropboxusercontent.com/u/92536541/The_Nest-1.0-all.zip">here</a>!</p>
+</section>
+
+<div id="gallery"></div>
+
+<section>
+	<h2>Challenges</h2>
+
+	<ul>
+		<li><em>Length and detail.</em> As this was part of a much larger and complex story, with over a hundred characters between the demon and human realms, I had to choose which plot elements to keep, which ones to simplify, and which characters to write out or in while still staying true to the plot.</li>
+		<li><em>Alternative endings.</em> There are 5 possible endings. With less than two months to write all of them and implement and test them, keeping all story paths coherent and making sure the code correctly leads the player to the correct ending based on their decisions was definitely a challenge. At the same time, it was really fun to take a story that had turned out one way and add 'what ifs' that took it somewhere else entirely!
+		<li><em>Implementation.</em> This was our second Ren'py project for the class, but I still had only a limited experience with the framework. I had to look up how to do some of the things I wanted to do, but more than that, I was really picky with my screen effects and music fadeout. As I really cared for this project, I would sometimes keep replaying a scene just to figure out if a transition or effect should last a tenth of a second longer...</li>
+	</ul>
+</section>
+
+<script>
+	appendGalleryPictures("nest", 6);
+	document.querySelector("h1").innerHTML = "The Nest";
+	document.querySelector("title").innerHTML = "The Nest";
+	document.querySelector("#en").href += "nest.html";
+	document.querySelector("#pt-br").href += "nest.html";
+	document.querySelector("#nav-projects").id = "current";
+</script>
