@@ -4,11 +4,17 @@ layout: en
 <section>
 	<p><em>The Nest</em> is a visual novel developed for Foundations of Interactive Narrative class at Rochester Institute of Technology. We had a little less than two months to pitch a plot, write the story in screenplay format, receive feedback from our peers, and implement the VN using <a href="https://www.renpy.org/">Ren'py</a>, which is a Python framework for developing visual novels.</p>
 
+	<p>
+	During the writing process, I used <a href="https://twinery.org/">Twine</a> to help me plan and prototype the <a href="../images/nest/nest7.jpg">scene and choice flow</a>. With the generated graph as a reference, I wrote the screenplay with some added notes about how player choices would affect relevant variables in the game. To speed things up, I wrote a Python script that automatized part of the process of converting dialogue from the screenplay to Ren'py code. This turned out to be very helpful as I just had to manually fill in the parts that hadn't been converted, and it saved me a lot of time that I spent adding animations and sound instead.
+	</p>
+
 	<p>Writing, character design and character art were all made by myself. Credits for the music, sound effects and backgrounds are available at <a href="https://github.com/yaragg/The-Nest">the repository for the project</a>. The story is based on a small arc of a much, much larger story I have been writing with a friend, Karalynn Krause, for eight years now.</p>
 
 	<p>In <em>The Nest</em>, you play as High Mage Luna Dieinoche, who has just returned from an ill-fated incursion into a newly discovered demon realm. During her travels, she met the son of the late High Mage Nikolai Amarov, who shared his suspicions that Nikolai--the man she had loved and watched die for the crime of practicing Necromancy--had in fact been framed. Now, twenty years after that horrible execution, she must carefully navigate the vipers' nest that is the High Council of the Mages' Guild, uncover secrets of the past that she had once failed to find all those years ago, and discover who is to blame for Nikolai's wrongful death. When any of her friends and fellow High Mages could be the traitor she's looking for, she must be careful not to become a second Nikolai herself...</p>
 
 	<p>Download it <a href="https://www.dropbox.com/s/aqq29eg0wqf6a0v/The_Nest-1.0-all.zip">here</a>!</p>
+
+	<p>You can also download the screenplay <a href="../files/The_Nest_screenplay.pdf">here</a>.</p>
 </section>
 
 <div id="gallery"></div>
@@ -24,7 +30,7 @@ layout: en
 </section>
 
 <script>
-	appendGalleryPictures("nest", 6);
+	appendGalleryPictures("nest", 7);
 	document.querySelector("h1").innerHTML = "The Nest";
 	document.querySelector("title").innerHTML = "The Nest";
 	document.querySelector("#en").href += "nest.html";
