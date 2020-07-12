@@ -3,11 +3,11 @@ layout: en
 ---
 <section>
 	<div id="sub">
-        <ul>
-            <li><a href="#" id="programming" class="sub-selected">Programming</a></li>
-            <li><a href="#" id="languages">Languages, Arts &amp; Music</a></li>
-            <li><a href="#" id="miscellaneous">Miscellaneous</a></li>
-        </ul>
+		<ul>
+			<li><a href="#" id="programming" class="sub-selected">Programming</a></li>
+			<li><a href="#" id="languages">Narrative</a></li>
+			<li><a href="#" id="miscellaneous">Miscellaneous</a></li>
+		</ul>
 	</div>
 
 	<div id="progContent">
@@ -20,8 +20,10 @@ layout: en
 			<li>HTML5 and CSS</li>
 			<li>C and C++</li>
 			<li>RPG Maker XP and RPG Maker VX Ace</li>
+			<li>Git</li>
+			<li>Agile programming</li>
 		</ul>
-		
+
 		I also know:
 		<ul>
 			<li>C#</li>
@@ -36,76 +38,105 @@ layout: en
 	</div>
 
 	<div id="langContent">
-		<h2>Languages, Arts &amp; Music</h2>
+		<h2>Narrative</h2>
 
-		I grew up a Portuguese/French bilingual, and have since branched out to other languages:
-		<ul>
-			<li>Fluent French</li>
-			<li>Fluent Portuguese</li>
-			<li>Fluent English</li>
-			<li>Basic Spanish (4 years of classes in high school)</li>
-			<li>Very basic Japanese (2 years of classes)</li>
-		</ul>
+		<p><em>High fantasy</em> (medieval fantasy set in fictional worlds, such as Lord of the Rings, Game of Thrones
+			or Dungeons & Dragons) is my favorite genre.
+			</br>I also write in the <em>modern fantasy</em>, <em>urban fantasy</em> and <em>crime</em> genres.</p>
 
-		I also have some artistic skills!
+		<p>I'm experienced with:</p>
 		<ul>
-			<li>Some drawing skills, which you can check out in <a href="http://yaragg.deviantart.com/">my DeviantArt account</a></li>
-			<li>Some music skills
-				<ul>
-					<li>Took 8 years of violin classes</li>
-					<li>Took some 3-4 years of piano classes</li>
-					<li>Have a rarely updated <a href="https://www.youtube.com/user/yaragg01137">Youtube channel</a> where I post some video game music covers</li>
-				</ul>
-			</li>
+			<li>Writing fiction <em>in English</em></li>
+			<ul>
+				<li>13 years of experience writing in pairs (<i>roleplay</i>) with native English speakers</li>
+			</ul>
+			<li>Creating fictional worlds (<em>worldbuilding</em>)</li>
+			<li>Branching narratives</li>
+			<ul>
+				<li>Check out my visual novels: <a href="nest.html">The Nest</a> and <a href="tati_tatu.html">Tati
+						Tatu</a></li>
+				<li>As an experimental work, check out <a href="foregone_conclusion.html">Foregone Conclusion</a></li>
+			</ul>
+			<li><em>Ren'py</em>: three visual novels completed, and I also developed a Python script to help convert
+				dialogue from screenplays into native Ren'py format</li>
+			<li><em>Twine</em>, both for telling stories and for <a href="../images/twine_branching.png">prototyping
+					branching narratives</a></li>
+			<li>Implementing narratives in RPG Maker</li>
+
+
 		</ul>
 	</div>
 
 	<div id="miscContent">
 		<h2>Miscellaneous</h2>
 
-		I am comfortable with:
+		<h3>Languages</h3>
+
+		I grew up a Portuguese/French bilingual, and have since branched out to other languages:
 		<ul>
-			<li>Git</li>
-			<li>Photoshop</li>
+			<li>Fluent French</li>
+			<li>Fluent Portuguese</li>
+			<li>Fluent English</li>
+			<ul>
+				<li>Scored 119 out of 120 in the TOELF iBT profiency exam</li>
+			</ul>
+			<li>Basic Spanish (4 years of classes in high school)</li>
+			<li>Very basic Japanese (2 years of classes)</li>
+		</ul>
+
+		<h3>Music</h3>
+
+		<ul>
+			<li>Completed the 21 Days of VGM challenge twice and composed songs available on <a href="https://soundcloud.com/yaragg">my SoundCloud profile</a></li>
+			<li>Took 8 years of violin classes</li>
+			<li>Took some 3-4 years of piano classes</li>
+			<li>Have a rarely updated <a href="https://www.youtube.com/user/yaragg01137">Youtube channel</a> where I post some video game music covers</li>
+		</ul>
+
+		<h3>Art</h3>
+		<ul>
+			<li>Took 4 years of drawing lessons</li>
+			<li>Completed the <a href="https://inktober.com/">Inktober</a> challenge in 2019</li>
+			<li>Have a page on <a href="http://yaragg.deviantart.com/">DeviantArt</a></li>
 		</ul>
 	</div>
 </section>
 <script>
-document.querySelector("h1").innerHTML = "Skills";
-document.querySelector("title").innerHTML = "Skills";
-document.querySelector("#en").href += "skills.html";
-document.querySelector("#pt-br").href += "skills.html";
-document.querySelector("#nav-skills").id = "current";
+	document.querySelector("h1").innerHTML = "Skills";
+	document.querySelector("title").innerHTML = "Skills";
+	document.querySelector("#en").href += "skills.html";
+	document.querySelector("#pt-br").href += "skills.html";
+	document.querySelector("#nav-skills").id = "current";
 </script>
 <script>
-"use strict";
+	"use strict";
 
-$(document).ready(function(){
-	$("#programming").on("click", function(){
-		$("#programming").addClass("sub-selected");
-		$("#languages").removeClass("sub-selected");
-		$("#miscellaneous").removeClass("sub-selected");
-		$("#langContent").hide();
-		$("#miscContent").hide();
-		$("#progContent").fadeIn(750);
-	});
+	$(document).ready(function () {
+		$("#programming").on("click", function () {
+			$("#programming").addClass("sub-selected");
+			$("#languages").removeClass("sub-selected");
+			$("#miscellaneous").removeClass("sub-selected");
+			$("#langContent").hide();
+			$("#miscContent").hide();
+			$("#progContent").fadeIn(750);
+		});
 
-	$("#languages").on("click", function(){
-		$("#languages").addClass("sub-selected");
-		$("#programming").removeClass("sub-selected");
-		$("#miscellaneous").removeClass("sub-selected");
-		$("#progContent").hide();
-		$("#miscContent").hide();
-		$("#langContent").fadeIn(750);
-	});
+		$("#languages").on("click", function () {
+			$("#languages").addClass("sub-selected");
+			$("#programming").removeClass("sub-selected");
+			$("#miscellaneous").removeClass("sub-selected");
+			$("#progContent").hide();
+			$("#miscContent").hide();
+			$("#langContent").fadeIn(750);
+		});
 
-	$("#miscellaneous").on("click", function(){
-		$("#miscellaneous").addClass("sub-selected");
-		$("#programming").removeClass("sub-selected");
-		$("#languages").removeClass("sub-selected");
-		$("#progContent").hide();
-		$("#langContent").hide();
-		$("#miscContent").fadeIn(750);
+		$("#miscellaneous").on("click", function () {
+			$("#miscellaneous").addClass("sub-selected");
+			$("#programming").removeClass("sub-selected");
+			$("#languages").removeClass("sub-selected");
+			$("#progContent").hide();
+			$("#langContent").hide();
+			$("#miscContent").fadeIn(750);
+		});
 	});
-});
 </script>
