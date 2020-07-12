@@ -191,43 +191,43 @@ figure{
 
 }
 
-#bots{
+.bots{
 	background-image: url('../images/bots_thumb.png');
 }
 
-#nest{
+.nest{
 	background-image: url('../images/nest_thumb.png');
 }
 
-#topdown_shooter{
+.topdown_shooter{
 	background-image: url('../images/topdown_shooter_thumb.png');
 }
 
-#foregone_conclusion{
+.foregone_conclusion{
 	background-image: url('../images/foregone_conclusion_thumb.png');
 }
 
-#swedzilla{
+.swedzilla{
 	background-image: url('../images/swedzilla_thumb.png');
 }
 
-#dungeon{
+.dungeon{
 	background-image: url('../images/dungeon_thumb.png');
 }
 
-#asteroids{
+.asteroids{
 	background-image: url('../images/asteroids_thumb.png');
 }
 
-#tracery{
+.tracery{
 	background-image: url('../images/tracery_thumb.png');
 }
 
-#random{
+.random{
 	background-image: url('../images/random_thumb.png');
 }
 
-#wars{
+.wars{
 	background-image: url('../images/robot_wars_thumb.png');
 }
 
@@ -312,7 +312,7 @@ form p:nth-last-child(2){
 	text-decoration: underline;
 }
 
-#langContent, #miscContent{
+#langContent, #miscContent, #narrative-projects, #previous-projects{
 	display: none;
 }
 

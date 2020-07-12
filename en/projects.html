@@ -2,66 +2,75 @@
 layout: en
 ---
 <section>
-	<div class="project" id="topdown_shooter">
-		<a class="pic-link" href="topdown_shooter.html"></a>
-		<a class="name" href="topdown_shooter.html">Magic Topdown Shooter</a>
+	<div id="sub">
+		<ul>
+			<li><a href="#" id="nav-programming-projects" class="sub-selected">Programming</a></li>
+			<li><a href="#" id="nav-narrative-projects">Interactive narratives</a></li>
+			<li><a href="#" id="nav-previous-projects">Previous projects</a></li>
+		</ul>
 	</div>
 
-	<div class="project" id="nest">
-		<a class="pic-link" href="nest.html"></a>
-		<a class="name" href="nest.html">The Nest</a>
+	<div id="programming-projects">
+		<div class="project topdown_shooter">
+			<a class="pic-link" href="topdown_shooter.html"></a>
+			<a class="name" href="topdown_shooter.html">Magic Topdown Shooter (2016)</a>
+		</div>
+
+		<div class="project nest">
+			<a class="pic-link" href="nest.html"></a>
+			<a class="name" href="nest.html">The Nest (2016)</a>
+		</div>
+
+
+		<div class="project foregone_conclusion">
+			<a class="pic-link" href="foregone_conclusion.html"></a>
+			<a class="name" href="foregone_conclusion.html">Foregone Conclusion (2016)</a>
+		</div>
+
+
+		<div class="project tracery">
+			<a class="pic-link" href="tracery_dungeon.html"></a>
+			<a class="name" href="tracery_dungeon.html">Dungeon Crawl Story Generator (2016)</a>
+		</div>
+
+
+		<div class="project dungeon">
+			<a class="pic-link" href="dungeon.html"></a>
+			<a class="name" href="dungeon.html">Dungeon Crawler (2014)</a>
+		</div>
 	</div>
 
-	<div class="project" id="bots">
-		<a class="pic-link" href="bots.html"></a>
-		<a class="name" href="bots.html">We Only Missed the Bots</a>
+	<div id="narrative-projects">
+		<div class="project nest">
+			<a class="pic-link" href="nest.html"></a>
+			<a class="name" href="nest.html">The Nest (2016)</a>
+		</div>
+
+
+		<div class="project foregone_conclusion">
+			<a class="pic-link" href="foregone_conclusion.html"></a>
+			<a class="name" href="foregone_conclusion.html">Foregone Conclusion (2016)</a>
+		</div>
+
+
+		<div class="project tracery">
+			<a class="pic-link" href="tracery_dungeon.html"></a>
+			<a class="name" href="tracery_dungeon.html">Dungeon Crawl Story Generator (2016)</a>
+		</div>
+
+
+		<div class="project dungeon">
+			<a class="pic-link" href="dungeon.html"></a>
+			<a class="name" href="dungeon.html">Dungeon Crawler (2014)</a>
+		</div>
 	</div>
 
-	<div class="project" id="foregone_conclusion">
-		<a class="pic-link" href="foregone_conclusion.html"></a>
-		<a class="name" href="foregone_conclusion.html">Foregone Conclusion</a>
+	<div id="previous-projects">
+		<div class="project bots">
+			<a class="pic-link" href="bots.html"></a>
+			<a class="name" href="bots.html">We Only Missed the Bots (2015)</a>
+		</div>
 	</div>
-
-	<div class="project" id="swedzilla">
-		<a class="pic-link" href="swedzilla.html"></a>
-		<a class="name" href="swedzilla.html">Swedzilla Audio Visualizer</a>
-	</div>
-
-	<div class="project" id="dungeon">
-		<a class="pic-link" href="dungeon.html"></a>
-		<a class="name" href="dungeon.html">Dungeon Crawler</a>
-	</div>
-
-	<div class="project" id="asteroids">
-		<a class="pic-link" href="asteroids.html"></a>
-		<a class="name" href="asteroids.html">Asteroids</a>
-	</div>
-
-	<div class="project" id="tracery">
-		<a class="pic-link" href="tracery_dungeon.html"></a>
-		<a class="name" href="tracery_dungeon.html">Dungeon Crawl Story Generator</a>
-	</div>
-
-	<div class="project" id="random">
-		<a class="pic-link" href="random.html"></a>
-		<a class="name" href="random.html">Rolling on Random</a>
-	</div>
-
-	<div class="project" id="wars">
-		<a class="pic-link" href="robot_wars.html"></a>
-		<a class="name" href="robot_wars.html">Robot Wars</a>
-	</div>
-
-	<ul class="print-only">
-		<li>Magic Topdown Shooter</li>
-		<li>The Nest</li>
-		<li>We Only Missed the Bots</li>
-		<li>Dungeon Crawler</li>
-		<li>Asteroids</li>
-		<li>Dungeon Crawl Story Generator</li>
-		<li>Rolling on Random</li>
-		<li>Robot Wars</li>
-	</ul>
 </section>
 <script>
 	document.querySelector("h1").innerHTML = "Projects";
@@ -69,4 +78,38 @@ layout: en
 	document.querySelector("#en").href += "projects.html";
 	document.querySelector("#pt-br").href += "projects.html";
 	document.querySelector("#nav-projects").id = "current";
+</script>
+
+<script>
+	"use strict";
+
+	$(document).ready(function () {
+		$("#nav-programming-projects").on("click", function () {
+			$("#nav-programming-projects").addClass("sub-selected");
+			$("#nav-narrative-projects").removeClass("sub-selected");
+			$("#nav-previous-projects").removeClass("sub-selected");
+			$("#narrative-projects").hide();
+			$("#previous-projects").hide();
+			$("#programming-projects").fadeIn(750);
+		});
+
+		$("#nav-narrative-projects").on("click", function () {
+			$("#nav-narrative-projects").addClass("sub-selected");
+			$("#nav-programming-projects").removeClass("sub-selected");
+			$("#nav-previous-projects").removeClass("sub-selected");
+			$("#programming-projects").hide();
+			$("#previous-projects").hide();
+			$("#narrative-projects").fadeIn(750);
+		});
+
+		$("#nav-previous-projects").on("click", function () {
+			$("#nav-previous-projects").addClass("sub-selected");
+			$("#nav-programming-projects").removeClass("sub-selected");
+			$("#nav-narrative-projects").removeClass("sub-selected");
+			$("#programming-projects").hide();
+			$("#narrative-projects").hide();
+			$("#previous-projects").fadeIn(750);
+		});
+	});
+
 </script>
