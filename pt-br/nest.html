@@ -4,11 +4,17 @@ layout: pt-br
 <section>
 	<p><em>The Nest</em> (em inglês, <em>O Ninho</em>) é uma visual novel desenvolvida para o curso de Fundamentos de Narrativa Interativa que realizei durante o intercâmbio no Rochester Institute of Technology. Tivemos um pouco menos de dois meses para definir o enredo, escrever a história em formato de roteiro de cinema, receber feedback de nossos colegas, e implementar o jogo utilizando <a href="https://www.renpy.org/">Ren'py</a>, que é um framework em Python para desenvolver visual novels.</p>
 
+	<p>
+	Durante o processo de escrita, utilizei o <a href="https://twinery.org/">Twine</a> para planejar e prototipar o <a href="../images/nest/nest7.jpg">fluxo das cenas e escolhas</a>. Com base no gráfico, escrevi o roteiro já com algumas anotações de quais variáveis seriam afetadas por quais escolhas e vice-versa. Para poupar tempo, escrevi um script em Python para automatizar parte do processo de conversão do roteiro para código compatível com o Ren'py. Isso acabou sendo extremamente útil, pois precisei apenas completar manualmente as partes que não haviam sido convertidas e pude usar o tempo economizado para adicionar animações e som.
+	</p>
+
 	<p>A escrita, o design de personagens e a arte dos personagens foram todos feitos por mim. Créditos para a música, efeitos sonoros e fundos de tela podem ser conferidos no <a href="https://github.com/yaragg/The-Nest">repositório do projeto</a>. A história é baseada em um pequeno arco narrativo de uma história muito, muito maior, que venho escrevendo em inglês há oito anos com uma amiga, Karalynn Krause.</p>
 
 	<p>Em <em>The Nest</em>, você joga como a Arquimaga Luna Dieinoche, que acaba de retornar de uma desastrosa expedição em um mundo recentemente descoberto. Durante sua viagem, ela encontrou o filho do falecido Arquimago Nikolai Amarov, que admitiu suspeitar que Nikolai--o homem que Luna amou e viu morrer pelo crime de praticar Necromancia--na verdade teria sido vítima de uma armação. Agora, vinte anos depois daquela horrível execução, ela deve cuidadosamente investigar o ninho de cobras que é o Alto Conselho da Guilda dos Magos, descobrir segredos que ela já havia falhado em encontrar há anos, e descobrir quem é culpado pela morte injusta de Nikolai. Mas quando qualquer um de seus amigos e colegas de Conselho pode ser o traidor que ela procura, ela deve tomar cuidado para não se tornar um segundo Nikolai ela mesma...</p>
 
 	<p>Baixe o jogo <a href="https://www.dropbox.com/s/aqq29eg0wqf6a0v/The_Nest-1.0-all.zip">aqui</a>! (Disponível somente em inglês.)</p>
+
+	<p>O roteiro também está disponível <a href="../files/The_Nest_screenplay.pdf">aqui</a>.</p>
 </section>
 
 <div id="gallery"></div>
@@ -24,7 +30,7 @@ layout: pt-br
 </section>
 
 <script>
-	appendGalleryPictures("nest", 6);
+	appendGalleryPictures("nest", 7);
 	document.querySelector("h1").innerHTML = "The Nest";
 	document.querySelector("title").innerHTML = "The Nest";
 	document.querySelector("#en").href += "nest.html";
