@@ -1,0 +1,39 @@
+---
+layout: en
+---
+<section>
+    <p><em>Tati Tatu</em> is a visual novel developed during the 2019 Women Game Jam. Our team was composed of 8 women: 3 artists, 2 composers/sound designers, 2 writers, and myself as writer and programmer.</p>
+    
+    <p>
+    The theme for the jam was <em>Identity and Independence</em>, and we wanted to tell the story of a female character in a quest for self-knowledge. From the beginning, we felt it was important to make it a universal experience for the players--something that wouldn't be too closely tied to life events that players might or might not have experienced themselves. As a consequence, we decided to use anthropomorphic animals as characters and make ample use of symbolism and metaphore in the story.
+    </p>
+
+    <p>There are 3 endings: one good, one neutral, and one bad ending. All members of the team were involved in deciding the plot. As soon as we had a summary, we picked out key scenes and characters so the artists and composers could start working, and the other two writers and I got together and worked out the details for the rest of the story. Since I had a good experience using Twine as a tool for prototyping branching narratives before, we made a <a href="../images/tati_tatu/tati_tatu6.JPG">graph of scenes and player choices</a> that we used as a guide during development. Due to time constraints--the jam lasted only a weekend--we needed to write the screenplay in parallel, so each of us worked on one act from the story. I wrote Act 2, which focuses on the wildfire scene and the rainmaking ritual on the good ending branch.</p>
+
+    <p>I was also responsible for implementing the visual novel in Ren'py. To save us some time, before we started writing I made a script similar to the one I used in <a href="nest.html">The Nest</a> to convert the screenplay into Ren'py code. I came up with a simplified screenplay format that allowed writers to add instructions for when the game should add certain images or background music, which the script automatically converted to code as well.</p>
+    
+	<p>Download the game <a href="https://daniaa.itch.io/tati-tatu">here</a>!</p>
+
+	<p>My work on the screenplay is available <a href="../files/Tati_Tatu_act2.pdf">here</a>. Note that due to time constraints, we didn't use the default screenplay format.</p>
+</section>
+
+<div id="gallery"></div>
+
+<section>
+	<h2>Challenges</h2>
+
+	<ul>
+        <li><em>Time.</em> The jam lasted from Friday evening to Sunday afternoon, and we didn't bring any pre-made material. We had to work as quickly and efficiently as possible, so we defined and limited the scope early on and split tasks so we could work in parallel.</li>
+        <li><em>Organization.</em> An 8 person team is huge for a jam, and we needed to make clear which tasks each person needed to be working on at every moment. We made a Trello board, and I started a Discord server to make communication easier. I also kept in close contact with the artists so we could define standards for file formats, dimensions and other asset specs.</li>
+		
+	</ul>
+</section>
+
+<script>
+	appendGalleryPictures("tati_tatu", 6);
+	document.querySelector("h1").innerHTML = "Tati Tatu";
+	document.querySelector("title").innerHTML = "Tati Tatu";
+	document.querySelector("#en").href += "tati_tatu.html";
+	document.querySelector("#pt-br").href += "tati_tatu.html";
+	document.querySelector("#nav-projects").id = "current";
+</script>
