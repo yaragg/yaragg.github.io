@@ -1,0 +1,39 @@
+---
+layout: pt-br
+---
+<section>
+    <p><em>Tati Tatu</em> é uma visual novel desenvolvida durante a Women Game Jam de 2019. Éramos uma equipe de 8 mulheres, sendo 3 artistas, 2 compositoras/sound designers, 2 escritoras, e eu como escritora e programadora.</p>
+    
+    <p>
+    O tema da jam era <em>Identidade e Independência</em>, e quisemos focar em uma personagem feminina que busca autoconhecimento. Desde o começo, tivemos a preocupação de tornar a experiência mais universal para os jogadores e evitar que ficasse muito atrelada a alguma situação específica que o jogador pode ou não ter vivenciado. Assim, decidimos utilizar animais antropomorfizados como personagens e tratar do tema de maneira mais metafórica, com amplo uso de simbolismo.
+    </p>
+
+    <p>O jogo tem 3 finais: um bom, um neutro e um final ruim. Todas as integrantes do grupo participaram da elaboração da trama. Assim que terminamos o resumo do enredo, separamos as cenas e personagens mais importantes para que as artistas e compositoras pudessem começar a trabalhar, e eu e as duas outras escritoras nos reunimos para definir os detalhes do resto da história. Como tive uma boa experiência usando o Twine para prototipar narrativas ramificadas antes, montamos um <a href="../images/tati_tatu/tati_tatu6.JPG">gráfico de cenas e escolhas</a> que nos serviu como guia durante o desenvolvimento. Por questão de tempo--o evento dura apenas um final de semana--era necessário escrever o roteiro em paralelo, então cada uma escreveu um ato da história. Eu escrevi o Ato 2, que foca nas cenas do incêndio e do ritual da chuva no caminho ao final feliz.</p>
+
+    <p>Além disso, fui responsável por implementar a visual novel no Ren'py. Para economizar tempo, antes de começarmos a escrever desenvolvi um script similar ao que usei em <a href="nest.html">The Nest</a> para converter o roteiro em código compatível com a engine. Defini um formato simplificado para o roteiro que permitiu às escritoras incluir instruções sobre quando o jogo deveria usar alguma imagem ou música especifica, as quais o script automaticamente converteria em código.</p>
+    
+	<p>Baixe o jogo <a href="https://daniaa.itch.io/tati-tatu">aqui</a>! (Disponível somente em inglês.)</p>
+
+	<p>A minha parte do roteiro está disponível <a href="../files/Tati_Tatu_act2.pdf">aqui</a>. Por questão de tempo, não utilizamos o formato padrão.</p>
+</section>
+
+<div id="gallery"></div>
+
+<section>
+	<h2>Desafios</h2>
+
+	<ul>
+        <li><em>Tempo.</em> A jam durou de sexta à noite até domingo à tarde, e não levamos nenhum material pronto para o evento. Foi necessário agilizar a produção ao máximo, definindo e limitando o escopo desde o começo e separando o trabalho para fazer o máximo possível em paralelo.</li>
+        <li><em>Organização.</em> Um time de 8 pessoas é grande para uma jam, e precisamos deixar claro qual era a tarefa de cada uma em cada momento. Fizemos um Trello, e criei um servidor no Discord para facilitar a comunicação. Também mantive contato próximo com as artistas para definir o formato, dimensões e outras especificações dos assets.</li>
+		
+	</ul>
+</section>
+
+<script>
+	appendGalleryPictures("tati_tatu", 6);
+	document.querySelector("h1").innerHTML = "Tati Tatu";
+	document.querySelector("title").innerHTML = "Tati Tatu";
+	document.querySelector("#en").href += "tati_tatu.html";
+	document.querySelector("#pt-br").href += "tati_tatu.html";
+	document.querySelector("#nav-projects").id = "current";
+</script>
